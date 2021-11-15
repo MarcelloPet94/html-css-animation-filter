@@ -85,3 +85,50 @@
     0% {transform: rotate(0deg);}
     100% {transform: rotate(-360deg);}
   }
+
+  .ex-11-icon:hover {
+    animation: rotateInverse linear;
+    animation-duration: 2s;
+}
+
+@keyframes rotateInverse {
+    0% {transform: rotate(0deg);}
+    90% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  a.ex-12-button:hover .ex-12-top-white {
+    animation: translateTopSqT linear;
+    animation-duration: 2s;
+}
+
+@keyframes translateTopSqT {
+    0% {position:absolute; top:-10%; left: 10%;}
+    50% {position:absolute; top:-10%; left: 60%;}
+    100% {position:absolute; top:-10%; left: 10%;}
+  }
+
+  a.ex-12-button:hover .ex-12-bottom-white {
+    animation: translateTopSqB linear;
+    animation-duration: 2s;
+}
+
+@keyframes translateTopSqB {
+    0% {position:absolute; bottom:-10%; right: 20%;}
+    50% {position:absolute; bottom:-10%; right: 60%;}
+    100% {position:absolute; bottom:-10%; right: 20%;}
+  }
+
+  a.ex-13-button:hover .ex-13-top-white {
+    animation: aroundT linear;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}
+
+@keyframes aroundT {
+    10% {position:absolute; top:-10px; left: 80%;}
+    25% {position:absolute; top:50px; left: 88%;}
+    50% {position:absolute; top:50px; left: -17%;}
+    80% {position:absolute; top:-10px; left: 0%;}
+    100% {position:absolute; top:-10px; left: 10%;}
+  }
