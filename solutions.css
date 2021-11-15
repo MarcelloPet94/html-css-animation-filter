@@ -132,3 +132,17 @@
     80% {position:absolute; top:-10px; left: 0%;}
     100% {position:absolute; top:-10px; left: 10%;}
   }
+
+  a.ex-13-button:hover .ex-13-bottom-white {
+    animation: aroundB linear;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}
+
+@keyframes aroundB {
+    10% {position:absolute; bottom:-10px; right: 90%;}
+    25% {position:absolute; bottom:55px; right: 90%;}
+    50% {position:absolute; bottom:50px; right: -15%;}
+    80% {position:absolute; bottom:-10px; right: 0%;}
+    100% {position:absolute; bottom:-10px; right: 20%;}
+  }
